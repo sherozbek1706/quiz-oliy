@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Quiz App</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header__logo">
+      <img src="./assets/images/profile.jpg" alt="logo">
+      <h2>SHE'ROZBEK B. |</h2>
+      <p class="name  hide">name: Abbosxo'ja</p>
+    </div>
+    <p class="time">
+      <span id="seconds">00</span>:<span id="tens">00</span>
+    </p>
+  </header>
+  <div class="container">
+    <div class="spinner-test hide">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="startContent">
+      <h3>Assalamu 'alaykum 😊 , dear student !</h3>
+      <ol>
+        <li>Test 60 minut bo'ladi!</li>
+        <li>Testda 50 ta savol bo'ladi!</li>
+        <li>Har bitta savolda 4 tadan variant bo'ladi!</li>
+        <li>Test sizni darajangizni aniqlab beradi!</li>
+      </ol>
+      <input type="text" class="student-name" placeholder="Enter your name..." required>
+      <button class="start-test" title="START TEST!   ">START TEST!</button>
+    </div>
+    <div class="questions hide">
+      <h2 class="question">Q1. Are ..... student ? </h2>
+      <div class="variants">
+        <button class="variant">I am a Doctor</button>
+        <button class="variant">I is a Doctor</button>
+        <button class="variant">I are a Doctor</button>
+        <button class="variant">I may a Doctor</button>
+      </div>
+      <div class="questionAllbtn">
+        <button class="btn-question next-question" title="Next Question">Next Question</button>
+        <button class="btn-question stop-question" title="Stop exam">Stop exam</button>
+      </div>
+      <div class="question-stop-madal question-stop-madal-disabled">
+        <div class="stop__modal">
+          <p>do you really want to stop the test!</p>
+          <div class="corfirm__user">
+            <button class="confirm__btn no__confirm" title="test continues!">NO</button>
+            <button class="confirm__btn yes__confirm" title="test is finished!">YES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="endQuestion hide">
+      <h2>finally, the questions are over 👌.</h2>
+      <h3 class="conguralations">She'rozbek, Your result is excellent 😍.</h3>
+      <h1 class="result-question">47 / 50</h1>
+      <button class="again-test">Take the test again!</button>
+    </div>
+  </div>
+
+
+  <script src="./assets/data/level.js"></script>
+  <script src="./assets/data/data.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
